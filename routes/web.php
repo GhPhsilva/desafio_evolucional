@@ -23,4 +23,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::post('/db', [App\Http\Controllers\HomeController::class, 'db'])->name('db');
     Route::post('/relatorio', [App\Http\Controllers\HomeController::class, 'relatorio'])->name('relatorio');
+    Route::get('/download', [App\Http\Controllers\HomeController::class, 'download'])->name('download');
 });
